@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <title>Crossword Puzzler</title>
+        <style type="text/css">
+            .slot {
+            width : 30px;
+            height :30px;
+            border : 1px solid black;
+            text-align : center;
+            border-radius: 5px;
+            font-family: cursive;
+            
+            
+            }
+            .betul{
+            width : 30px;
+            height :30px;
+            border : 1px solid green;
+            color: green;
+            text-align:center;
+            border-radius: 5px;
+            font-family: cursive;
+            }
+            .salah{
+            width : 30px;
+            height :30px;
+            border : 1px solid red;
+            color: red;
+            text-align:center;
+            border-radius: 5px;
+            font-family: cursive;
+            }
+			
+        </style>
+    </head>
+    <body>
+        <div class="row text-center">
+            <div class="col">
+                    <p style="border: solid 1px #a17fe0; background:#5D26C1; padding: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; margin: 0; text-align: center; line-height: 23px; color: white; font-size: 25px">World of the Crossing of the Words</p>
+            </div>	
+        </div> 
+        <div class="container">
+            <div class="row" style="background:#a17fe0; border-radius: 15px; padding: 5px;">
+                <div class="col-md" style="background:  #78a5a2; border-radius: 15px; padding: 5px;">
+                        <table>
+                            <tr>
+                                <td colspan="9"></td>
+                                <td><input type="text" id="t1"  name="" class="slot" placeholder="1" maxlength="1"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="9"></td>
+                                <td><input type="text" id="t2"  name="" class="slot" maxlength="1"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="9"></td>
+                                <td><input type="text" id="t3"  name="" class="slot" placeholder="2" maxlength="1" ></td>
+                                <td><input type="text" id="t4"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t5"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t6"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t7"  name="" class="slot" maxlength="1"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"></td>
+                                <td><input type="text" id="t8"  name="" class="slot" placeholder="3" maxlength="1" ></td>
+                                <td colspan="6"></td>
+                                <td><input type="text" id="t9"  name="" class="slot" maxlength="1"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"></td>
+                                <td><input type="text" id="t10"  name="" class="slot" maxlength="1"></td>
+                                <td colspan="1"></td>
+                                <td><input type="text" id="t11"  name="" class="slot" placeholder="4" maxlength="1"></td>
+                                <td><input type="text" id="t12"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t13"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t14"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t15"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t16"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t17"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t18"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t18"  name="" class="slot" maxlength="1"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"></td>
+                                <td><input type="text" id="t19"  name="" class="slot" maxlength="1"></td>
+                                <td colspan="1"></td>
+                                <td><input type="text" id="t20"  name="" class="slot" maxlength="1"></td>                                
+                            </tr>
+                            <tr>
+                                <td colspan="2"></td>
+                                <td><input type="text" id="t21"  name="" class="slot" maxlength="1"></td>
+                                <td colspan="1"></td>
+                                <td><input type="text" id="t22"  name="" class="slot" maxlength="1"></td>     
+                            </tr>
+                            <tr>
+                                <td><input type="text" id="t23"  name="" class="slot" placeholder="5" maxlength="1"></td>
+                                <td><input type="text" id="t24"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t25"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t26"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t27"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t28"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t29"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t30"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t31"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t32"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t33"  name="" class="slot" placeholder="6" maxlength="1"></td>
+                                <td><input type="text" id="t34"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t35"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t36"  name="" class="slot" maxlength="1"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"></td>
+                                <td><input type="text" id="t37"  name="" class="slot" maxlength="1"></td>
+                                <td colspan="1"></td>
+                                <td><input type="text" id="t38"  name="" class="slot" maxlength="1"></td>
+                                <td colspan="5"></td>
+                                <td><input type="text" id="t39"  name="" class="slot" maxlength="1"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"></td>
+                                <td><input type="text" id="t40"  name="" class="slot" maxlength="1"></td>
+                                <td colspan="1"></td>
+                                <td><input type="text" id="t41"  name="" class="slot" maxlength="1"></td>
+                                <td colspan="5"></td>
+                                <td><input type="text" id="t42"  name="" class="slot" placeholder="7" maxlength="1"></td>
+                                <td><input type="text" id="t43"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t44"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t45"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t46"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t47"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t48"  name="" class="slot" maxlength="1"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"></td>
+                                <td><input type="text" id="t49"  name="" class="slot" maxlength="1"></td>
+                                <td colspan="5"></td>
+                                <td><input type="text" id="t50"  name="" class="slot" maxlength="1"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"></td>
+                                <td><input type="text" id="t51"  name="" class="slot" maxlength="1"></td>
+                                <td colspan="5"></td>
+                                <td><input type="text" id="t52"  name="" class="slot" maxlength="1"></td>
+
+                            </tr>
+                            <tr>
+                                <td colspan="4"></td>
+                                <td><input type="text" id="t53"  name="" class="slot" maxlength="1"></td>
+                                <td colspan="5"></td>
+                                <td><input type="text" id="t54"  name="" class="slot" maxlength="1"></td>
+                                <td colspan="1"></td>
+                                <td><input type="text" id="t55"  name="" class="slot" placeholder="8" maxlength="1"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="7"></td>
+                                <td><input type="text" id="t56"  name="" class="slot" placeholder="9" maxlength="1"></td>
+                                <td><input type="text" id="t57"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t58"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t59"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t60"  name="" class="slot" maxlength="1"></td>
+                                <td><input type="text" id="t61"  name="" class="slot" maxlength="1"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="12"></td>
+                                <td><input type="text" id="t62"  name="" class="slot" maxlength="1"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="12"></td>
+                                <td><input type="text" id="t63"  name="" class="slot" maxlength="1"></td>
+                            </tr>
+                        </table>
+                        <br>
+                        <div >
+                            <button class="btn btn-primary" onclick="Check()">Check</button>  
+                            <button class="btn btn-primary" onClick=" window.location.reload(); ">Reset</button>
+                            </div>    
+                        <br>
+                </div>
+                <div class="col-md">
+                        <p style="border: solid 1px #aaa; background:lavender; padding: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; margin: 0; text-align: center; line-height: 15px; color: black; font-size: 20px">Across</p>
+                        <div style="background:whitesmoke; border-radius: 10px; padding: 5px; padding-left: 10px;">
+                        <a><b>2.</b> A simple machine consisting of a rigid bar that pivots on a fixed point.</a><br>
+                        <a><b>4.</b> The process by which plants and animals exchange gases with their environment.</a><br>
+                        <a><b>5.</b> The process by which plants make their own food using sunlight.</a><br>
+                        <a><b>7.</b> Shape that has 8 sides.</a><br>
+                        <a><b>9.</b> A celestial body that orbits a star and may have other objects orbiting it.</a><br> 
+                    </div>
+                    <br>
+                        <p style="border: solid 1px #aaa; background:lavender; padding: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px; margin: 0; text-align: center; line-height: 15px; color: black; font-size: 20px">Down</p>
+                        <div style="background: whitesmoke; border-radius: 10px; padding: 5px; padding-left: 10px;">
+                        <a><b>1.</b> The basic unit of life.</a><br>
+                        <a><b>3.</b> The study of living organisms.</a><br>
+                        <a><b>4.</b> A system of government where the people have the power to make decisions.</a><br>
+                        <a><b>6.</b> The process of the Earth's surface wearing away over time.</a><br>
+                        <a><b>8.</b> The smallest unit of matter.</a><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div>
+			
+		</div>
+
+        <script type="text/javascript">
+            function Check(){
+                var t1 = document.getElementById("t1").value;
+                var t2 = document.getElementById("t2").value;
+                var t3 = document.getElementById("t3").value;
+                var t4 = document.getElementById("t4").value;
+                var t5 = document.getElementById("t5").value;
+                var t6 = document.getElementById("t6").value;
+                var t7 = document.getElementById("t7").value;
+                var t8 = document.getElementById("t8").value;
+                var t9 = document.getElementById("t9").value;
+                var t10 = document.getElementById("t10").value;
+                var t11 = document.getElementById("t11").value;
+                var t12 = document.getElementById("t12").value;
+                var t13 = document.getElementById("t13").value;
+                var t14 = document.getElementById("t14").value;
+                var t15 = document.getElementById("t15").value;
+                var t16 = document.getElementById("t16").value;
+                var t17 = document.getElementById("t17").value;
+                var t18 = document.getElementById("t18").value;
+                var t19 = document.getElementById("t19").value;
+                var t20 = document.getElementById("t20").value;
+                var t21 = document.getElementById("t21").value;
+                var t22 = document.getElementById("t22").value;
+                var t23 = document.getElementById("t23").value;
+                var t24 = document.getElementById("t24").value;
+                var t25 = document.getElementById("t25").value;
+                var t26 = document.getElementById("t26").value;
+                var t27 = document.getElementById("t27").value;
+                var t28 = document.getElementById("t28").value;
+                var t29 = document.getElementById("t29").value;
+                var t30 = document.getElementById("t30").value;
+                var t31 = document.getElementById("t31").value;
+                var t32 = document.getElementById("t32").value;
+                var t33 = document.getElementById("t33").value;
+                var t34 = document.getElementById("t34").value;
+                var t35 = document.getElementById("t35").value;
+                var t36 = document.getElementById("t36").value;
+                var t37 = document.getElementById("t37").value;
+                var t38 = document.getElementById("t38").value;
+                var t39 = document.getElementById("t39").value;
+                var t40 = document.getElementById("t40").value;
+                var t41 = document.getElementById("t41").value;
+                var t42 = document.getElementById("t42").value;
+                var t43 = document.getElementById("t43").value;
+                var t44 = document.getElementById("t44").value;
+                var t45 = document.getElementById("t45").value;
+                var t46 = document.getElementById("t46").value;
+                var t47 = document.getElementById("t47").value;
+                var t48 = document.getElementById("t48").value;
+                var t49 = document.getElementById("t49").value;
+                var t50 = document.getElementById("t50").value;
+                var t51 = document.getElementById("t51").value;
+                var t52 = document.getElementById("t52").value;
+                var t53 = document.getElementById("t53").value;
+                var t54 = document.getElementById("t54").value;
+                var t55 = document.getElementById("t55").value;
+                var t56 = document.getElementById("t56").value;
+                var t57 = document.getElementById("t57").value;
+                var t58 = document.getElementById("t58").value;
+                var t59 = document.getElementById("t59").value;
+                var t60 = document.getElementById("t60").value;
+                var t61 = document.getElementById("t61").value;
+                var t62 = document.getElementById("t62").value;
+                var t63 = document.getElementById("t63").value;
+
+                if(t1=="C" || t1=="c"){
+                    document.getElementById("t1").classList.remove("slot");
+                    document.getElementById("t1").classList.remove("salah");
+                    document.getElementById("t1").classList.add("betul");                  
+                } else {
+                    document.getElementById("t1").classList.remove("slot");
+                    document.getElementById("t1").classList.remove("betul");
+                    document.getElementById("t1").classList.add("salah");
+                }
+                if(t2=="E" || t2=="e"){
+                    document.getElementById("t2").classList.remove("slot");
+                    document.getElementById("t2").classList.remove("salah");
+                    document.getElementById("t2").classList.add("betul");                  
+                } else {
+                    document.getElementById("t2").classList.remove("slot");
+                    document.getElementById("t2").classList.remove("betul");
+                    document.getElementById("t2").classList.add("salah");
+                }
+                if(t3=="L" || t3=="l"){
+                    document.getElementById("t3").classList.remove("slot");
+                    document.getElementById("t3").classList.remove("salah");
+                    document.getElementById("t3").classList.add("betul");
+                   
+                } else {
+                    document.getElementById("t3").classList.remove("slot");
+                    document.getElementById("t3").classList.remove("betul");
+                    document.getElementById("t3").classList.add("salah");
+                }
+                if(t4=="E" || t4=="e"){
+                    document.getElementById("t4").classList.remove("slot");
+                    document.getElementById("t4").classList.remove("salah");
+                    document.getElementById("t4").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t4").classList.remove("slot");
+                    document.getElementById("t4").classList.remove("betul");
+                    document.getElementById("t4").classList.add("salah");
+                }
+                if(t5=="V" || t5=="v"){
+                    document.getElementById("t5").classList.remove("slot");
+                    document.getElementById("t5").classList.remove("salah");
+                    document.getElementById("t5").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t5").classList.remove("slot");
+                    document.getElementById("t5").classList.remove("betul");
+                    document.getElementById("t5").classList.add("salah");
+                }
+                if(t6=="E" || t6=="e"){
+                    document.getElementById("t6").classList.remove("slot");
+                    document.getElementById("t6").classList.remove("salah");
+                    document.getElementById("t6").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t6").classList.remove("slot");
+                    document.getElementById("t6").classList.remove("betul");
+                    document.getElementById("t6").classList.add("salah");
+                }
+                if(t7=="R" || t7=="r"){
+                    document.getElementById("t7").classList.remove("slot");
+                    document.getElementById("t7").classList.remove("salah");
+                    document.getElementById("t7").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t7").classList.remove("slot");
+                    document.getElementById("t7").classList.remove("betul");
+                    document.getElementById("t7").classList.add("salah");
+                }
+                if(t8=="B" || t8=="b"){
+                    document.getElementById("t8").classList.remove("slot");
+                    document.getElementById("t8").classList.remove("salah");
+                    document.getElementById("t8").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t8").classList.remove("slot");
+                    document.getElementById("t8").classList.remove("betul");
+                    document.getElementById("t8").classList.add("salah");
+                }
+                if(t9=="L" || t9=="l"){
+                    document.getElementById("t9").classList.remove("slot");
+                    document.getElementById("t9").classList.remove("salah");
+                    document.getElementById("t9").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t9").classList.remove("slot");
+                    document.getElementById("t9").classList.remove("betul");
+                    document.getElementById("t9").classList.add("salah");
+                }
+                if(t10=="I" || t10=="i"){
+                    document.getElementById("t10").classList.remove("slot");
+                    document.getElementById("t10").classList.remove("salah");
+                    document.getElementById("t10").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t10").classList.remove("slot");
+                    document.getElementById("t10").classList.remove("betul");
+                    document.getElementById("t10").classList.add("salah");
+                }
+                if(t11=="D" || t11=="d"){
+                    document.getElementById("t11").classList.remove("slot");
+                    document.getElementById("t11").classList.remove("salah");
+                    document.getElementById("t11").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t11").classList.remove("slot");
+                    document.getElementById("t11").classList.remove("betul");
+                    document.getElementById("t11").classList.add("salah");
+                }
+                if(t12=="I" || t12=="i"){
+                    document.getElementById("t12").classList.remove("slot");
+                    document.getElementById("t12").classList.remove("salah");
+                    document.getElementById("t12").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t12").classList.remove("slot");
+                    document.getElementById("t12").classList.remove("betul");
+                    document.getElementById("t12").classList.add("salah");
+                }
+                if(t13=="F" || t13=="f"){
+                    document.getElementById("t13").classList.remove("slot");
+                    document.getElementById("t13").classList.remove("salah");
+                    document.getElementById("t13").classList.add("betul");
+                } else {
+                    document.getElementById("t13").classList.remove("slot");
+                    document.getElementById("t13").classList.remove("betul");
+                    document.getElementById("t13").classList.add("salah");
+                }
+                if(t14=="F" || t14=="f"){
+                    document.getElementById("t14").classList.remove("slot");
+                    document.getElementById("t14").classList.remove("salah");
+                    document.getElementById("t14").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t14").classList.remove("slot");
+                    document.getElementById("t14").classList.remove("betul");
+                    document.getElementById("t14").classList.add("salah");
+                }
+                if(t15=="U" || t15=="u"){
+                    document.getElementById("t15").classList.remove("slot");
+                    document.getElementById("t15").classList.remove("salah");
+                    document.getElementById("t15").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t15").classList.remove("slot");
+                    document.getElementById("t15").classList.remove("betul");
+                    document.getElementById("t15").classList.add("salah");
+                }
+                if(t16=="S" || t16=="s"){
+                    document.getElementById("t16").classList.remove("slot");
+                    document.getElementById("t16").classList.remove("salah");
+                    document.getElementById("t16").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t16").classList.remove("slot");
+                    document.getElementById("t16").classList.remove("betul");
+                    document.getElementById("t16").classList.add("salah");
+                }
+                if(t17=="I" || t17=="i"){
+                    document.getElementById("t17").classList.remove("slot");
+                    document.getElementById("t17").classList.remove("salah");
+                    document.getElementById("t17").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t17").classList.remove("slot");
+                    document.getElementById("t17").classList.remove("betul");
+                    document.getElementById("t17").classList.add("salah");
+                }
+                if(t18=="O" || t18=="o"){
+                    document.getElementById("t18").classList.remove("slot");
+                    document.getElementById("t18").classList.remove("salah");
+                    document.getElementById("t18").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t18").classList.remove("slot");
+                    document.getElementById("t18").classList.remove("betul");
+                    document.getElementById("t18").classList.add("salah");
+                }
+                if(t19=="N" || t19=="n"){
+                    document.getElementById("t19").classList.remove("slot");
+                    document.getElementById("t19").classList.remove("salah");
+                    document.getElementById("t19").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t19").classList.remove("slot");
+                    document.getElementById("t19").classList.remove("betul");
+                    document.getElementById("t19").classList.add("salah");
+                }
+				if(t20=="E" || t20=="e"){
+                    document.getElementById("t20").classList.remove("slot");
+                    document.getElementById("t20").classList.remove("salah");
+                    document.getElementById("t20").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t20").classList.remove("slot");
+                    document.getElementById("t20").classList.remove("betul");
+                    document.getElementById("t20").classList.add("salah");
+                }
+                if(t21=="L" || t21=="l"){
+                    document.getElementById("t21").classList.remove("slot");
+                    document.getElementById("t21").classList.remove("salah");
+                    document.getElementById("t21").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t21").classList.remove("slot");
+                    document.getElementById("t21").classList.remove("betul");
+                    document.getElementById("t21").classList.add("salah");
+                }
+                if(t22=="M" || t22=="m"){
+                    document.getElementById("t22").classList.remove("slot");
+                    document.getElementById("t22").classList.remove("salah");
+                    document.getElementById("t22").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t22").classList.remove("slot");
+                    document.getElementById("t22").classList.remove("betul");
+                    document.getElementById("t22").classList.add("salah");
+                }
+                if(t23=="P" || t23=="p"){
+                    document.getElementById("t23").classList.remove("slot");
+                    document.getElementById("t23").classList.remove("salah");
+                    document.getElementById("t23").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t23").classList.remove("slot");
+                    document.getElementById("t23").classList.remove("betul");
+                    document.getElementById("t23").classList.add("salah");
+                }
+                if(t24=="H" || t24=="h"){
+                    document.getElementById("t24").classList.remove("slot");
+                    document.getElementById("t24").classList.remove("salah");
+                    document.getElementById("t24").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t24").classList.remove("slot");
+                    document.getElementById("t24").classList.remove("betul");
+                    document.getElementById("t24").classList.add("salah");
+                }
+                if(t25=="O" || t25=="o"){
+                    document.getElementById("t25").classList.remove("slot");
+                    document.getElementById("t25").classList.remove("salah");
+                    document.getElementById("t25").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t25").classList.remove("slot");
+                    document.getElementById("t25").classList.remove("betul");
+                    document.getElementById("t25").classList.add("salah");
+                }
+                if(t26=="T" || t26=="t"){
+                    document.getElementById("t26").classList.remove("slot");
+                    document.getElementById("t26").classList.remove("salah");
+                    document.getElementById("t26").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t26").classList.remove("slot");
+                    document.getElementById("t26").classList.remove("betul");
+                    document.getElementById("t26").classList.add("salah");
+                }
+                if(t27=="O" || t27=="o"){
+                    document.getElementById("t27").classList.remove("slot");
+                    document.getElementById("t27").classList.remove("salah");
+                    document.getElementById("t27").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t27").classList.remove("slot");
+                    document.getElementById("t27").classList.remove("betul");
+                    document.getElementById("t27").classList.add("salah");
+                }
+                if(t28=="S" || t28=="s"){
+                    document.getElementById("t28").classList.remove("slot");
+                    document.getElementById("t28").classList.remove("salah");
+                    document.getElementById("t28").classList.add("betul");                  
+                } else {
+                    document.getElementById("t28").classList.remove("slot");
+                    document.getElementById("t28").classList.remove("betul");
+                    document.getElementById("t28").classList.add("salah");
+                }
+                if(t29=="Y" || t29=="y"){
+                    document.getElementById("t29").classList.remove("slot");
+                    document.getElementById("t29").classList.remove("salah");
+                    document.getElementById("t29").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t29").classList.remove("slot");
+                    document.getElementById("t29").classList.remove("betul");
+                    document.getElementById("t29").classList.add("salah");
+                }
+                if(t30=="N" || t30=="n"){
+                    document.getElementById("t30").classList.remove("slot");
+                    document.getElementById("t30").classList.remove("salah");
+                    document.getElementById("t30").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t30").classList.remove("slot");
+                    document.getElementById("t30").classList.remove("betul");
+                    document.getElementById("t30").classList.add("salah");
+                }
+                if(t31=="T" || t31=="t"){
+                    document.getElementById("t31").classList.remove("slot");
+                    document.getElementById("t31").classList.remove("salah");
+                    document.getElementById("t31").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t31").classList.remove("slot");
+                    document.getElementById("t31").classList.remove("betul");
+                    document.getElementById("t31").classList.add("salah");
+                }
+                if(t32=="H" || t32=="h"){
+                    document.getElementById("t32").classList.remove("slot");
+                    document.getElementById("t32").classList.remove("salah");
+                    document.getElementById("t32").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t32").classList.remove("slot");
+                    document.getElementById("t32").classList.remove("betul");
+                    document.getElementById("t32").classList.add("salah");
+                }
+                if(t33=="E" || t33=="e"){
+                    document.getElementById("t33").classList.remove("slot");
+                    document.getElementById("t33").classList.remove("salah");
+                    document.getElementById("t33").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t33").classList.remove("slot");
+                    document.getElementById("t33").classList.remove("betul");
+                    document.getElementById("t33").classList.add("salah");
+                }
+                if(t34=="S" || t34=="s"){
+                    document.getElementById("t34").classList.remove("slot");
+                    document.getElementById("t34").classList.remove("salah");
+                    document.getElementById("t34").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t34").classList.remove("slot");
+                    document.getElementById("t34").classList.remove("betul");
+                    document.getElementById("t34").classList.add("salah");
+                }
+                if(t35=="I" || t35=="i"){
+                    document.getElementById("t35").classList.remove("slot");
+                    document.getElementById("t35").classList.remove("salah");
+                    document.getElementById("t35").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t35").classList.remove("slot");
+                    document.getElementById("t35").classList.remove("betul");
+                    document.getElementById("t35").classList.add("salah");
+                }
+                if(t36=="S" || t36=="s"){
+                    document.getElementById("t36").classList.remove("slot");
+                    document.getElementById("t36").classList.remove("salah");
+                    document.getElementById("t36").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t36").classList.remove("slot");
+                    document.getElementById("t36").classList.remove("betul");
+                    document.getElementById("t36").classList.add("salah");
+                }
+                if(t37=="G" || t37=="g"){
+                    document.getElementById("t37").classList.remove("slot");
+                    document.getElementById("t37").classList.remove("salah");
+                    document.getElementById("t37").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t37").classList.remove("slot");
+                    document.getElementById("t37").classList.remove("betul");
+                    document.getElementById("t37").classList.add("salah");
+                }
+                if(t38=="G" || t38=="g"){
+                    document.getElementById("t38").classList.remove("slot");
+                    document.getElementById("t38").classList.remove("salah");
+                    document.getElementById("t38").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t38").classList.remove("slot");
+                    document.getElementById("t38").classList.remove("betul");
+                    document.getElementById("t38").classList.add("salah");
+                }
+                if(t39=="R" || t39=="r"){
+                    document.getElementById("t39").classList.remove("slot");
+                    document.getElementById("t39").classList.remove("salah");
+                    document.getElementById("t39").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t39").classList.remove("slot");
+                    document.getElementById("t39").classList.remove("betul");
+                    document.getElementById("t39").classList.add("salah");
+                }
+                if(t40=="Y" || t40=="y"){
+                    document.getElementById("t40").classList.remove("slot");
+                    document.getElementById("t40").classList.remove("salah");
+                    document.getElementById("t40").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t40").classList.remove("slot");
+                    document.getElementById("t40").classList.remove("betul");
+                    document.getElementById("t40").classList.add("salah");
+                }
+                if(t41=="R" || t41=="r"){
+                    document.getElementById("t41").classList.remove("slot");
+                    document.getElementById("t41").classList.remove("salah");
+                    document.getElementById("t41").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t41").classList.remove("slot");
+                    document.getElementById("t41").classList.remove("betul");
+                    document.getElementById("t41").classList.add("salah");
+                }
+                if(t42=="O" || t42=="o"){
+                    document.getElementById("t42").classList.remove("slot");
+                    document.getElementById("t42").classList.remove("salah");
+                    document.getElementById("t42").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t42").classList.remove("slot");
+                    document.getElementById("t42").classList.remove("betul");
+                    document.getElementById("t42").classList.add("salah");
+                }
+                if(t43=="C" || t43=="c"){
+                    document.getElementById("t43").classList.remove("slot");
+                    document.getElementById("t43").classList.remove("salah");
+                    document.getElementById("t43").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t43").classList.remove("slot");
+                    document.getElementById("t43").classList.remove("betul");
+                    document.getElementById("t43").classList.add("salah");
+                }
+                if(t44=="T" || t44=="t"){
+                    document.getElementById("t44").classList.remove("slot");
+                    document.getElementById("t44").classList.remove("salah");
+                    document.getElementById("t44").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t44").classList.remove("slot");
+                    document.getElementById("t44").classList.remove("betul");
+                    document.getElementById("t44").classList.add("salah");
+                }
+                if(t45=="A" || t45=="a"){
+                    document.getElementById("t45").classList.remove("slot");
+                    document.getElementById("t45").classList.remove("salah");
+                    document.getElementById("t45").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t45").classList.remove("slot");
+                    document.getElementById("t45").classList.remove("betul");
+                    document.getElementById("t45").classList.add("salah");
+                }
+                if(t46=="G" || t46=="g"){
+                    document.getElementById("t46").classList.remove("slot");
+                    document.getElementById("t46").classList.remove("salah");
+                    document.getElementById("t46").classList.add("betul");
+                   
+                } else {
+                    document.getElementById("t46").classList.remove("slot");
+                    document.getElementById("t46").classList.remove("betul");
+                    document.getElementById("t46").classList.add("salah");
+                }
+                if(t47=="O" || t47=="o"){
+                    document.getElementById("t47").classList.remove("slot");
+                    document.getElementById("t47").classList.remove("salah");
+                    document.getElementById("t47").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t47").classList.remove("slot");
+                    document.getElementById("t47").classList.remove("betul");
+                    document.getElementById("t47").classList.add("salah");
+                }
+                if(t48=="N" || t48=="n"){
+                    document.getElementById("t48").classList.remove("slot");
+                    document.getElementById("t48").classList.remove("salah");
+                    document.getElementById("t48").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t48").classList.remove("slot");
+                    document.getElementById("t48").classList.remove("betul");
+                    document.getElementById("t48").classList.add("salah");
+                }
+                if(t49=="A" || t49=="a"){
+                    document.getElementById("t49").classList.remove("slot");
+                    document.getElementById("t49").classList.remove("salah");
+                    document.getElementById("t49").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t49").classList.remove("slot");
+                    document.getElementById("t49").classList.remove("betul");
+                    document.getElementById("t49").classList.add("salah");
+                }
+                if(t50=="S" || t50=="s"){
+                    document.getElementById("t50").classList.remove("slot");
+                    document.getElementById("t50").classList.remove("salah");
+                    document.getElementById("t50").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t50").classList.remove("slot");
+                    document.getElementById("t50").classList.remove("betul");
+                    document.getElementById("t50").classList.add("salah");
+                }
+                if(t51=="C" || t51=="c"){
+                    document.getElementById("t51").classList.remove("slot");
+                    document.getElementById("t51").classList.remove("salah");
+                    document.getElementById("t51").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t51").classList.remove("slot");
+                    document.getElementById("t51").classList.remove("betul");
+                    document.getElementById("t51").classList.add("salah");
+                }
+                if(t52=="I" || t52=="i"){
+                    document.getElementById("t52").classList.remove("slot");
+                    document.getElementById("t52").classList.remove("salah");
+                    document.getElementById("t52").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t52").classList.remove("slot");
+                    document.getElementById("t52").classList.remove("betul");
+                    document.getElementById("t52").classList.add("salah");
+                }
+                if(t53=="Y" || t53=="y"){
+                    document.getElementById("t53").classList.remove("slot");
+                    document.getElementById("t53").classList.remove("salah");
+                    document.getElementById("t53").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t53").classList.remove("slot");
+                    document.getElementById("t53").classList.remove("betul");
+                    document.getElementById("t53").classList.add("salah");
+                }
+                if(t54=="O" || t54=="o"){
+                    document.getElementById("t54").classList.remove("slot");
+                    document.getElementById("t54").classList.remove("salah");
+                    document.getElementById("t54").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t54").classList.remove("slot");
+                    document.getElementById("t54").classList.remove("betul");
+                    document.getElementById("t54").classList.add("salah");
+                }
+                if(t55=="A" || t55=="a"){
+                    document.getElementById("t55").classList.remove("slot");
+                    document.getElementById("t55").classList.remove("salah");
+                    document.getElementById("t55").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t55").classList.remove("slot");
+                    document.getElementById("t55").classList.remove("betul");
+                    document.getElementById("t55").classList.add("salah");
+                }
+                if(t56=="P" || t56=="p"){
+                    document.getElementById("t56").classList.remove("slot");
+                    document.getElementById("t56").classList.remove("salah");
+                    document.getElementById("t56").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t56").classList.remove("slot");
+                    document.getElementById("t56").classList.remove("betul");
+                    document.getElementById("t56").classList.add("salah");
+                }
+                if(t57=="L" || t57=="l"){
+                    document.getElementById("t57").classList.remove("slot");
+                    document.getElementById("t57").classList.remove("salah");
+                    document.getElementById("t57").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t57").classList.remove("slot");
+                    document.getElementById("t57").classList.remove("betul");
+                    document.getElementById("t57").classList.add("salah");
+                }
+                if(t58=="A" || t58=="a"){
+                    document.getElementById("t58").classList.remove("slot");
+                    document.getElementById("t58").classList.remove("salah");
+                    document.getElementById("t58").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t58").classList.remove("slot");
+                    document.getElementById("t58").classList.remove("betul");
+                    document.getElementById("t58").classList.add("salah");
+                }
+                if(t59=="N" || t59=="n"){
+                    document.getElementById("t59").classList.remove("slot");
+                    document.getElementById("t59").classList.remove("salah");
+                    document.getElementById("t59").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t59").classList.remove("slot");
+                    document.getElementById("t59").classList.remove("betul");
+                    document.getElementById("t59").classList.add("salah");
+                }
+                if(t60=="E" || t60=="e"){
+                    document.getElementById("t60").classList.remove("slot");
+                    document.getElementById("t60").classList.remove("salah");
+                    document.getElementById("t60").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t60").classList.remove("slot");
+                    document.getElementById("t60").classList.remove("betul");
+                    document.getElementById("t60").classList.add("salah");
+                }
+                if(t61=="T" || t61=="t"){
+                    document.getElementById("t61").classList.remove("slot");
+                    document.getElementById("t61").classList.remove("salah");
+                    document.getElementById("t61").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t61").classList.remove("slot");
+                    document.getElementById("t61").classList.remove("betul");
+                    document.getElementById("t61").classList.add("salah");
+                }
+                if(t62=="O" || t62=="o"){
+                    document.getElementById("t62").classList.remove("slot");
+                    document.getElementById("t62").classList.remove("salah");
+                    document.getElementById("t62").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t62").classList.remove("slot");
+                    document.getElementById("t62").classList.remove("betul");
+                    document.getElementById("t62").classList.add("salah");
+                }
+                if(t63=="M" || t63=="m"){
+                    document.getElementById("t63").classList.remove("slot");
+                    document.getElementById("t63").classList.remove("salah");
+                    document.getElementById("t63").classList.add("betul");
+                    
+                } else {
+                    document.getElementById("t63").classList.remove("slot");
+                    document.getElementById("t63").classList.remove("betul");
+                    document.getElementById("t63").classList.add("salah");
+                }
+                }
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>
